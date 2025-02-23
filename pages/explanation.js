@@ -352,17 +352,6 @@ export default function Explanation() {
                 </p>
               </section>
 
-              <section>
-                <h2 className="text-3xl font-semibold mb-4">
-                  Why is this interesting?
-                </h2>
-                <p className="text-black mb-4 leading-relaxed">
-                  Well, obviously I find 
-                </p>
-                <p className="text-black mb-4 leading-relaxed">
-                  Like I said, the point of this site isn't to prove that what Monty knows matters, but help convey how this is possible.
-                  For me, at least, this is what does it.
-                </p>
             </div>
   
             {/* Footer with Back to Game Link */}
