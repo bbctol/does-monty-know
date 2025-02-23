@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Explanation() {
     return (
-      <div className="min-h-screen bg-gray-100 py-8">
+      <div className="min-h-screen bg-gray-100 py-8 text-black">
         <div className="max-w-4xl mx-auto space-y-6 px-4">
           {/* Main Content Card */}
           <div className="bg-white rounded-lg shadow-md p-8">
