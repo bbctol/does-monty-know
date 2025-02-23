@@ -10,19 +10,19 @@ const ResultsDisplay = ({ results }) => {
     <div className="grid grid-cols-4 gap-4 p-4">
       <div className="text-center">
         <div className="text-2xl font-bold text-green-600">{results.wins}</div>
-        <div className="text-sm text-gray-600">Wins</div>
+        <div className="text-sm text-black">Wins</div>
       </div>
       <div className="text-center">
         <div className="text-2xl font-bold text-red-600">{results.losses}</div>
-        <div className="text-sm text-gray-600">Losses</div>
+        <div className="text-sm text-black">Losses</div>
       </div>
       <div className="text-center">
         <div className="text-2xl font-bold text-blue-600">{results.earlyReveals}</div>
-        <div className="text-sm text-gray-600">Monty revealed the car</div>
+        <div className="text-sm text-black">Monty revealed the car</div>
       </div>
       <div className="text-center">
         <div className="text-2xl font-bold text-purple-600">{winRate}%</div>
-        <div className="text-sm text-gray-600">Win Rate</div>
+        <div className="text-sm text-black">Win Rate</div>
       </div>
     </div>
   );
@@ -257,13 +257,15 @@ const MontyHallSimulator = () => {
             
             <div className="text-center max-w-2xl space-y-4">
               <p>
-                In the classic version of the <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Monty Hall Problem</a>, 
-                the contestant chooses a door, and Monty, <em>who knows where the car is</em>, opens another door <em>that he knows has a goat behind it.</em> This 
-                causes a counterintuitive result: the contestant's odds of winning a car are better if they switch to the remaining unopened door.
+                In the <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Monty Hall Problem</a>, 
+                there are three doors, with a car behind one and a goat behind the other two. The contestant chooses a door, and the host, who knows where the car is, opens a different door to reveal a goat. The  
+                contestant can then stick with their original choice, or switch to the remaining unopened door.
               </p>
               <p>
-                However, if Monty <em>doesn't know</em> where the car is, and opens a door at random, there's no benefit to switching - <em>even if Monty did reveal a goat!</em> Don't 
+                Surprisingly, it's better to switch than to stick with your original choice. However, if the host <em>doesn't know</em> where the car is, and opens a door at random, there's no benefit to switching - <em>even if he revealed a goat!</em> Don't 
                 believe it? Try it for yourself!
+              </p>
+              <p><a href="/explanation" className="text-blue-600 font-bold hover:underline">What's going on?</a>
               </p>
             </div>
 
@@ -278,7 +280,7 @@ const MontyHallSimulator = () => {
               </Switch.Root>
               <span className={isClassicVersion ? 'text-gray-400' : ''}>Monty Doesn't Know</span>
             </div>
-            <p className="text-center text-gray-600">
+            <p className="text-center text-black">
               {isClassicVersion 
                 ? "In this version, Monty always reveals a goat behind one of the doors you didn't choose." 
                 : "In this version, Monty randomly reveals one of the doors you didn't choose - it might be the car!"}
@@ -311,7 +313,7 @@ const MontyHallSimulator = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-4">
               <div className="flex-1">
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-black mb-1">
                   Number of Games
                 </label>
                 <input
@@ -324,7 +326,7 @@ const MontyHallSimulator = () => {
               </div>
               
               <div className="flex-1">
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-black mb-1">
                   Strategy
                 </label>
                 <select
