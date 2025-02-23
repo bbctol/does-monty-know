@@ -248,11 +248,11 @@ const MontyHallSimulator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 py-8">
+    <div className="min-h-screen bg-gray-100 py-8 text-black">
       <div className="max-w-4xl mx-auto space-y-6 px-4">
         {/* Title and Description */}
         <div className="bg-white rounded-lg shadow-md p-6">
-          <div className="flex flex-col items-center space-y-4">
+          <div className="flex flex-col items-center space-y-4 text-black">
             <h2 className="text-2xl font-bold text-center">Does Monty Know?</h2>
             
             <div className="text-center max-w-2xl space-y-4">

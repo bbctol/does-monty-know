@@ -332,7 +332,7 @@ export default function Explanation() {
                   And <em>that,</em> to me, is the most fundamental reason it matters whether Monty knows. Whether Monty is choosing randomly or choosing a goat
                   every time is part of the <em>mechanism</em> of the game,
                   and the <em>whole point</em> of probability is to describe the mechanism. He does the same actions, but probability isn't about the actions - not
-                  about what has happened, or even what will happen, but about the <em>process by which things happen.</em>
+                  about what has happened, or even what will happen, but a description of the <em>process by which things happen.</em>
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   I'm not sure this all will make sense to others! But it's what helped me understand this problem. Because I was confused by this too! I didn't get it 
@@ -351,6 +351,18 @@ export default function Explanation() {
                   For me, at least, this is what does it.
                 </p>
               </section>
+
+              <section>
+                <h2 className="text-3xl font-semibold mb-4">
+                  Why is this interesting?
+                </h2>
+                <p className="text-black mb-4 leading-relaxed">
+                  Well, obviously I find 
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  Like I said, the point of this site isn't to prove that what Monty knows matters, but help convey how this is possible.
+                  For me, at least, this is what does it.
+                </p>
             </div>
   
             {/* Footer with Back to Game Link */}
