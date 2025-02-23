@@ -257,8 +257,8 @@ const MontyHallSimulator = () => {
             
             <div className="text-center max-w-2xl space-y-4">
               <p>
-                In the <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Monty Hall Problem</a>, 
-                there are three doors, with a car behind one and a goat behind the other two. The contestant chooses a door, and the host, who knows where the car is, opens a different door to reveal a goat. The  
+                In the <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Monty Hall Problem</a>, a contestant
+                is shown three doors, with a car behind one and a goat behind the other two. The contestant chooses a door, and the host, who knows where the car is, opens a different door to reveal a goat. The  
                 contestant can then stick with their original choice, or switch to the remaining unopened door.
               </p>
               <p>

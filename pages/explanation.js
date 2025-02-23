@@ -268,7 +268,7 @@ export default function Explanation() {
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   Why? Because the door you're pointing to either has a car behind it, or it doesn't. If it does, there's a 100% chance you're pointing at the car. If it doesn't, a 0%
-                  chance. So obbiously, it must be one of those values - "1/3" doesn't come into it! Sure, you don't know which of those it is, but one of them is true (and
+                  chance. So obviously, it must be one of those values - "1/3" doesn't come into it! Sure, you don't know which of those it is, but one of them is true (and
                   in the original version of the problem, it's not even like <em>no one</em> knows; Monty does!)
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
