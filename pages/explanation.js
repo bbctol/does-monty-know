@@ -32,7 +32,7 @@ export default function Explanation() {
                 </h2>
                 <p className="text-black mb-4 leading-relaxed">
                   This website is about the <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Monty Hall Problem</a>, 
-                  a famous brain teaser. The best-known version of the problem was asked to
+                  a famous brain teaser. The best-known version was asked to
                   columnist Marilyn vos Savant in 1990:</p>
                   <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-4">
                     <p>
@@ -44,7 +44,7 @@ export default function Explanation() {
                   </div> 
                 <p className="text-black mb-4 leading-relaxed">
                   The answer is yes: switching to the other door doubles your chances of getting the car.
-                  Most people find this result counterintuitive, and think that switching shouldn't make a difference. Even mathematicians get tripped up by this problem (vos Savant answered 
+                  Many people find this result counterintuitive, and think that switching shouldn't make a difference. Even mathematicians can get tripped up by this problem (vos Savant answered 
                   correctly and <a href="https://web.archive.org/web/20130121183432/http://marilynvossavant.com/game-show-problem/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">got a lot of angry letters disagreeing!</a>) But it's true that you should switch, and there are many good explanations for this online: I
                   like <a href="https://www.youtube.com/watch?v=7u6kFlWZOWg" target="_blank" rel="noopener" className="text-blue-600 hover:underline">this one</a> from Numberphile.
                 </p>
@@ -57,11 +57,11 @@ export default function Explanation() {
                   className="rounded-lg shadow-md"
                 />
                 <p className="text-center text-gray-600 mt-2 text-sm">
-                  The problem is named for <em>Let's Make a Deal</em> host Monty Hall, though the game described in the problem was never exactly played on the show.
+                  The problem is named for <em>Let's Make a Deal</em> host Monty Hall, though the game described in the problem isn't exactly how the show was played.
                 </p>
               </div>
                 <p className="text-black mb-4 leading-relaxed">
-                  However, the wording of the puzzle usually doesn't emphasize a key aspect: the host <strong>knows</strong> where
+                  However, the wording of the puzzle often doesn't emphasize a key aspect: the host <strong>knows</strong> where
                   the car is, and will <strong>always</strong> open a door with a goat behind it.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -71,7 +71,7 @@ export default function Explanation() {
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   A lot of people who mostly understand the original Monty Hall Problem <em>get this wrong.</em> And because the Monty Hall Problem is so famously counterintuitive,
-                  it's easy to get this modified version wrong, and then double down, insisting to yourself your answer
+                  it's easy to make a mistake on this modified version and then double down, insisting to yourself your answer
                   only seems wrong because the puzzle is so tricky.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -90,7 +90,7 @@ export default function Explanation() {
                   on the <a href="/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">main page</a> you can play the game
                   both ways. (Keep in mind that if Monty doesn't know where the car is,
                   he might accidentally reveal it, ending the game early!) Try or simulate it as many times as you like:
-                  when Monty doesn't know where the car is, then even in cases where he reveals a goat,
+                  when Monty doesn't know where the car is, then in cases when he reveals a goat,
                   there's no advantage to switching.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -99,7 +99,7 @@ export default function Explanation() {
                   This page is trying to get across conceptually, intuitively, how this can be possible.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  Because I don't blame anyone for getting confused! Why does it matter whether Monty deliberately or randomly reveals a goat?
+                  Because I don't blame anyone for getting confused! Why does it matter whether Monty knows where the goats are, if he reveals a goat either way?
                   Math doesn't care about "beliefs" or "intentions," right? If Monty does the
                   same thing in both situations, how can it make a difference <em>why</em> he does it?
                 </p>
@@ -111,7 +111,7 @@ export default function Explanation() {
                 </h3>
                 <p className="text-black mb-4 leading-relaxed">
                   One cause of confusion (deliberately echoed on this site!) is that the problem usually just says the host "knows what's behind the doors."
-                  But we don't actually care about Monty's "psychological state."" The phrase "the host, who knows what's behind the doors, opens a door which has a goat" really means this:
+                  But we don't actually care about Monty's "psychological state." The phrase "the host, who knows what's behind the doors, opens a door which has a goat" really means this:
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   <strong>The host will never open the door with the car behind it.</strong>
@@ -122,22 +122,29 @@ export default function Explanation() {
                   host's <em>predictable behavior,</em> not his knowledge. After all, the host in this simulated version is just a few lines of code - I'm not sure it "knows" anything!
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  Why does the host's <em>behavior</em> matter? If you simulate a lot of trials where "Monty doesn't know" (that is, where he opens a door at random) you'll notice that about 1/3 of
-                  the time, after your initial selection, when he opens a door, he just reveals the car and ends the game.
-                  And whether your strategy is to switch or stay, about 1/3 of the time, he reveals a goat and then you win, and 1/3 of the time he reveals a goat and then you lose. So no matter your strategy,
+                  Why does the host's <em>behavior</em> matter? If you simulate a lot of trials where "Monty doesn't know" (that is, where he opens a door at random) you'll notice that,
+                  whether your strategy is to switch or stay, about 1/3 of the time, he reveals a goat and then you win, and 1/3 of the time he reveals a goat and then you lose. But also, about 1/3 of
+                  the time Monty just reveals the car, ending the game. So no matter your strategy,
                   you have an even chance of winning in cases where Monty reveals a goat - but there are also these extra cases where Monty reveals the car.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  What if Monty <em>can't</em> reveal the car? What if (because he knows where the car is, or through divine intervention, or whatever) 
-                  he will <em>never</em> open the door with the car behind it? Well, the randomly-choosing Monty can only reveal the car if the original door you picked has a goat behind it.
+                  (You might be bothered by me saying that Monty revealing the car "ends the game early": I'm making up a rule that isn't in the original problem. But since we're only
+                  talking about what happens when Monty reveals a goat, it doesn't actually matter what the rules are when he reveals a car.
+                  We could say that means you automatically lose, in which case you have a 1/3 chance of victory no matter your strategy. Or
+                  that could be an automatic win, and you have a 2/3 chance of victory. But no matter what, when Monty reveals a goat,
+                  there's no difference in your success rate if you switch or stay.)
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  So if the randomly-choosing Monty reveals the car 1/3 of the time: what if Monty <em>can't</em> reveal the car? What if (because he knows where the car is, or through divine intervention, or whatever) 
+                  he will <em>never</em> open the door with the car behind it? Well, randomly-choosing Monty can only reveal the car if the original door you picked has a goat behind it.
                   Then he's faced with two doors, one with a car and one with a goat, and half the time, he'll reveal the car. The other
                   half of the time, he'll reveal a goat - so in those cases, the car is behind the other door, meaning it's better to switch. If instead, he <em>always</em> reveals the goat, that means that <em>every time</em> you
                   initially choose a goat, he has to reveal a goat and leave the car behind the other door: creating more situations where it's better to switch!
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   So, if you're drawing a tree diagram, you could think of it this way: if Monty doesn't know, in 1/3 of branches of the tree he
-                  reveals the car. If he does know, then those 1/3 of cases instead become cases where it's better to switch, yielding the result in the original problem:
-                  if you switch, you win 2/3 of the time.
+                  reveals the car. If he does know, then those 1/3 of branches instead become times where it's better to switch, yielding the result in the original problem:
+                  switching wins 2/3 of the time.
                 </p>
                 <h3 className="text-xl font-semibold mb-3">
                   It's about information
@@ -146,8 +153,8 @@ export default function Explanation() {
                   The above explanation... kind of makes sense? If you're mathematically inclined and love drawing tree diagrams, it might be enough. But I find it unsatisfying - it doesn't tackle
                   the <em>weirdness</em> of this problem. Because it really feels like both situations are the same! You point to a door, Monty reveals a goat,
                   you get to switch or stay: why should we care about hypothetical branches on trees that didn't actually happen? What do I even mean, branches become
-                  different branches? We know what branch we're on: the problem tells us
-                  that he revealed a goat. All our reasoning is conditional on that happening. So why do we care what else <em>could</em> have happened?
+                  different branches? We know what branch we're on: the problem says
+                  he revealed a goat. All our reasoning is conditional on that happening. So why do we care what could have happened, but didn't?
                 </p>
                 <div className="my-8 relative">
                 <Image
@@ -198,8 +205,8 @@ export default function Explanation() {
                   When Monty doesn't know, the puzzle is kind of like a different game
                   show: <a href="https://en.wikipedia.org/wiki/Deal_or_No_Deal_(American_game_show)" target="_blank" rel="noopener" className="text-blue-600 hover:underline"><em>Deal or No Deal</em></a>. That has a set of 
                   briefcases containing an array of different amounts of money, between $0.01 and $1,000,000. The contestant picks 
-                  one, and as the show goes on, randomly opens others onstage to reveal what's inside: when low dollar amounts are
-                  revealed, the contestants sigh with relief! Each case contains a different number of dollars, and every time you reveal a low number, it means that can't be the number in your case. Your expected
+                  one, and as the show goes on, randomly opens others onstage to reveal what's inside. When low dollar amounts are
+                  revealed, contestants sigh with relief! Each case contains a different number of dollars, and every time you reveal a low number, it means that can't be the number in your case. Your expected
                   value goes up.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -223,7 +230,7 @@ export default function Explanation() {
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   This is what, in a sense, "locks in" the 1/3 probability. It was 1/3 when you pointed at the door, and Monty hasn't
-                  done anything to change that. But, though it's a bit tricky to see how, we can use Monty's tricks
+                  done anything to change that. The key to the original problem is seeing how we can use Monty's tricks
                   against him. The fact that he <em>hasn't</em> given you more information about your own door teaches you something
                   about the <em>other</em> one: by changing the number of doors available, without changing the
                   probability that your own door is correct, he's increased the probability for the other door.
@@ -246,15 +253,15 @@ export default function Explanation() {
                   that he's avoiding #57 because opening it would reveal the car: you should switch!
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  But if Monty <em>doesn't know where the car is</em>, he can't be deliberately avoiding it! If he randomly opens 98 doors and doesn't find the car... that's
-                  unlikely, maybe a bit surprising, but (assuming you can trust that he doesn't know where the car is) it's not suspicious. In fact, opening all those doors without revealing the
-                  car makes you feel a lot <em>better</em> about your initial choice - a very plausible reason he hasn't found the car is that it's been behind
-                  your door the whole time! Each door that opens gives you information, and that information has steadily increased your probability from 1/100 right up to 1/2. 
+                  But if Monty doesn't know where the car is, he can't be deliberately avoiding it. If he randomly opens 98 doors and doesn't find the car... that's
+                  unlikely, maybe a bit surprising, but (assuming you trust he really doesn't know where the car is) it's not suspicious. In fact, opening all those doors without revealing the
+                  car makes you feel a lot <em>better</em> about your initial choice! A very plausible reason he hasn't found the car is that it's been behind
+                  your door the whole time. Each door that opens gives you information, and that information has steadily increased your probability from 1/100 right up to 1/2. 
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  You're in the same situation as a contestant on <em>Deal or No Deal</em> who eliminates all but one briefcase onstage, and the remaining dollar amounts are $0.01 and $1,000,000. This is an unlikely
+                  You're in the same situation as a contestant on <em>Deal or No Deal</em> who eliminates all but one onstage briefcas, and the remaining dollar amounts are $0.01 and $1,000,000. This is an unlikely
                   occurrence, sure - but now that it's happened, it makes for great television, because you have an equal chance to be holding one cent or a million dollars. Each time you eliminated a briefcase that didn't contain the million dollar prize, you increased the probability it was in
-                  each of the remaining briefcases onstage, as well as the one in your hands. Now there's only one onsteage: there's a 50/50 chance the million dollars are in there, and the same chance it's in yours. 
+                  each of the remaining briefcases onstage, as well as the one in your hands. Now there's only one onsteage: there's a 50/50 chance the million dollars are in there, and a 50/50 chance it's in yours. 
                 </p>
                 <h3 className="text-xl font-semibold mb-3">
                   No, really, it's <em>all</em> about information
@@ -325,14 +332,38 @@ export default function Explanation() {
                   behind multiple doors; that the people backstage aren't moving the car around in response
                   to my guess," and so on. 
                   Probability is not about what's actually true, not about where the car actually is;
-                  it's about what you know or are assuming to be true about the way a situation came to be, and what that tells you
+                  it's about what you know (or are assuming to be true) about how a situation came to be, and what that tells you
                   about what might happen next.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   And <em>that,</em> to me, is the most fundamental reason it matters whether Monty knows. Whether Monty is choosing randomly or choosing a goat
                   every time is part of the <em>mechanism</em> of the game,
-                  and the <em>whole point</em> of probability is to describe the mechanism. He does the same actions, but probability isn't about the actions - not
+                  and the <em>whole point</em> of probability is to describe the mechanism. He does the same actions, but probability is not about the actions - not
                   about what has happened, or even what will happen, but a description of the <em>process by which things happen.</em>
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  Here's one final way to think about it, with another silly statement:
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  The best strategy in the original Monty Hall Problem is <em>not</em> to switch every time.
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  Why? Because the best strategy is to switch <em>only when the other door actually has a car.</em> If you picked the car initially, you should stay. That's way
+                  better than a 2/3 chance of victory: you can win every time, just always open the door with the car!
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  There's nothing mpossible about always picking the car. It's just hard to 
+                  use this reliably as a strategy, but only because... you don't know where the car is.
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  Because we don't know where the car is, we treat each time we walk up to the doors as exactly the same. You pick a door,
+                  and there's a 1/3 chance there's a car behind it. But in fact, there are two very different things that can happen when you pick a door: you either
+                  pick a door with a car, or you pick a door with a goat. As soon as you choose, you're locked into one of these universes; you just don't know <em>which one.</em>
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  I lied when I said that if Monty knows, you should switch, and if he doesn't it makes no difference. The real, physical truth is that that doesn't matter,
+                  because the only thing that <em>really</em> matters is what's behind the door you're pointing at. If it's a goat, you should switch; if it's a car, you shouldn't.
+                  "If Monty knows, you should switch" is literally untrue a full 1/3 of the time.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   I'm not sure this all will make sense to others! But it's what helped me understand this problem. Because I was confused by this too! I didn't get it 
@@ -342,12 +373,13 @@ export default function Explanation() {
                   Who cares about how many hypothetical branches we didn't end up going down?
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  But probability is <em>all about</em> made-up, fake, hypothetical universes. You say things like "a 1/3 chance of pointing at the car" even though in the real world,
+                  But probability is <em>all about</em> made-up, fake, hypothetical universes. In the real world,
                   you're either pointing at a car or you're not: you made up
-                  three fake worlds, with a car behind each door, to express the extent of your knowledge about how the car got to wherever it is. Counting the number
+                  three fake worlds, with a car behind each door, to express the extent of your knowledge. Counting the number
                   of those hypothetical universes is the whole point, even though <em>none of them</em> truly exist.
-
-                  Like I said, the point of this site isn't to prove that what Monty knows matters, but help convey how this is possible.
+                </p>
+                  <p className="text-black mb-4 leading-relaxed">
+                Like I said, the point of this site isn't to prove that what Monty knows matters, but help convey how this is possible.
                   For me, at least, this is what does it.
                 </p>
               </section>
