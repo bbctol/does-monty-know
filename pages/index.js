@@ -257,12 +257,13 @@ const MontyHallSimulator = () => {
             
             <div className="text-center max-w-2xl space-y-4">
               <p>
-                In the <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Monty Hall Problem</a>, a contestant
-                picks one of three doors, with a car behind one and a goat behind the other two. The host, who knows where the car is, opens a different door to reveal a goat. The  
-                contestant can then stick with their original choice, or switch to the remaining unopened door.
+                In the <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Monty Hall Problem</a>, there's a
+                car behind one door and goats behind the other two. The contestant chooses a door, and the host opens a different door to reveal a goat. The  
+                contestant can either stick with their original choice, or switch to the remaining unopened door.
               </p>
               <p>
-                Surprisingly, it's better to switch than to stick with your original choice. However, if the host <em>doesn't know</em> where the car is, and opens a door at random, there's no benefit to switching - <em>even if he revealed a goat!</em> Don't 
+                If the host knows where the car is and will always reveal a goat, it's better to switch than to stick with your original choice. However, if
+                the host <em>doesn't know</em> where the car is and opens a random door, there's no benefit to switching - <em>even if he revealed a goat!</em> Don't 
                 believe it? Try it for yourself!
               </p>
               <p><a href="/explanation" className="text-blue-600 font-bold hover:underline">What's going on?</a>
