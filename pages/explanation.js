@@ -386,42 +386,43 @@ export default function Explanation() {
                   Why is this interesting?
                 </h3>
                 <p className="text-black mb-4 leading-relaxed">
-                  Well, clearly I find probability pretty interesting in general. But I like this particular problem because <em>it's a problem smart people get wrong.</em> Or at least, it's a problem
-                  people only got wrong if they've seen the original Monty Hall problem, and learned (some!) of the explanation for it.
+                  Well, clearly I find probability pretty interesting in general. But I like this particular puzzle because <em>it's a problem smart people get wrong.</em> Or at least, it's a problem
+                  people only got wrong if they've seen the original Monty Hall problem.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  Because I also got this wrong at first! I made the simulation because I wasn't sure I was calculating correctly, and once I started playing with it, the realization hit me like a ton of bricks. <em>Of course</em> it doesn't make a difference if you 
-                  switch. <em>This is the intuitive case!</em> This is the situation people are implicitly imagining when they hear the original Monty Hall problem; they get it wrong
-                  because they feel like <em>this</em> is what's happening. It doesn't make a difference if you switch, for the exact reasons you probably felt it didn't make a difference if you switched,
-                  before someone explained the subtleties of the original problem to you.
+                  Because once you start playing with the simulation, there's a moment when the realization hits you like a ton of bricks. <em>Of course</em> it doesn't make a difference if you 
+                  switch. <em>This is the intuitive case!</em> The reason people get confused by the original Monty Hall problem is because if you don't quite understand the problem, <em>this</em> is the situation
+                  you're picturing. There's no difference if you switch, for all the reasons it initially felt like it couldn't make a difference if you switched when someone told you the original problem.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  And I think there's a really interesting lesson in that! I'd put it this way: a smart person knows that intuition isn't always reliable. But it's very easy to know this and <em>use intuition anyway,</em>—you just swap out
+                  And I think there's a really interesting lesson in that! I'd put it this way: a smart person knows that intuition isn't always reliable. But it's very easy to know this and <em>use intuition anyway</em>—you just swap out
                   your first intuition for a new "counterintuitive" one. A person who looks at the second version of the Monty Hall problem and thinks it's probably better to switch is still "trusting their gut," they've just
-                  updated their gut feeling for problems like this.
+                  updated their gut feeling with the sense that: problems like this have a trick, remember? just remember that it's actually better to switch.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  So the lesson is: there's no way to avoid the need to sometimes use logic, <em>real</em> logic, break a problem down to its components before leaping to a solution. There's no list of cognitive
+                  So the lesson is this: you have to use logic, <em>real</em> logic, break a problem down to its components before leaping to a solution. There's no list of cognitive
                   fallacies you can memorize that will make you rational, no perfect set of heuristics that will always guide you correctly. Some things in life are intuitive, some are counter-intuitive, and
                   there's no detectable difference between the two before you break the problems down and look at them logically. The lesson of the Monty Hall problem shouldn't just be that "probability is tricky," it should be
-                  a reminder that anything can be tricky, and even if you think you know the tricks, you can get tricked again. There's no substitute for doing the math, running the simulation, approaching the problem
+                  a reminder that <em>anything</em> can be tricky, and even if you think you know the tricks, you can get tricked again. There is <em>no</em> substitute for doing the math, running the simulation, approaching the problem
                   with fresh eyes and trusting none of your guesses.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   That's one reason I find this puzzle interesting. But the other reason I like it is... again, just how <em>weird</em> it is!
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  It's so fun to see a situation where the exact same physical actions take place, but the probabilities are different! I think that's another reason analytically-minded people get tripped up! It feels
+                  It's so fun to see a situation where the exact same physical actions take place, but the outcome is somehow different! I think that's another reason analytically-minded people get tripped up! It feels
                   almost <em>mystical</em> to say "it matters whether Monty knows." It's like saying a watched pot never boils, or that the secret ingredient in Grandma's cookies is love. We're very used to the idea
-                  that the physical world is all that matters, and that to be scientific means understanding that the same set of physical events will lead to the same outcome, every time. It doesn't matter if Grandma baked
-                  the cookies with love or not: they're made of flour, butter, and sugar all the same.
+                  that the physical world is all that matters, and that to be rational means understanding that the same set of physical events will lead to the same outcome, every time. It doesn't matter if Grandma baked
+                  the cookies with love or not: if she added flour, butter, sugar, and eggs, they'll come out exactly the same regardless.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  And this problem does not deny physical reality. It is <em>not</em> actually mystical, it does not require anything out of the ordinary to be true. But it does show that from a <em>human</em> perspective,
-                  ideas like knowledge and intentionality can matter: <em>mathematically</em>. There is a <em>real</em> difference between Monty opening the door to reveal a goat deliberately or accidentally: even if it's the
-                  exact same physical event, it really does <em>mean</em> something different, in a way that matters. I don't mean this metaphorically: the difference between Monty opening the door deliberately or accidentally
-                  is the difference between a work of art made by an artist, and a perfect replica, down to the brushstroke, painted by a machine. It's the difference between doing something because you care about someone, or
-                  because you think it's expected of you. These differences are <em>real</em>, and understanding them is important.
+                  But this problem creates a clear, measurable set of scenarios where the same event, opening a door to reveal a goat, means something different. Your optimal strategy for the future is different,
+                  even though the past seems the same. And this problem does not deny physical reality. It is <em>not</em> actually mystical, it describes a real, measurable phenomenon. But it shows that from a <em>human</em> perspective,
+                  ideas like knowledge and intentionality can matter: <em>mathematically</em>. There is a <em>real</em> difference between Monty opening the door to reveal a goat deliberately or accidentally. And
+                  this might sound odd, but I mean it: that difference really is akin to
+                  the difference between a work of art made by an artist, and a perfect replica, down to the brushstroke, painted by a machine. It's the difference between doing something because you care about someone, or
+                  because you think it's expected of you. It's the difference between saying something because you mean it or because you were told to. 
+                  It's hard to talk about these differences, and easy to frame discussions of them as irrational. But these differences are <em>real</em>, and understanding them is important.
                   
                 </p>
               </section>
