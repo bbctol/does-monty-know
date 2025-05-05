@@ -45,7 +45,7 @@ export default function Explanation() {
                 <p className="text-black mb-4 leading-relaxed">
                   The answer is yes: switching to the other door doubles your chances of getting the car.
                   Many people find this result counterintuitive, and think that switching shouldn't make a difference. Even mathematicians can get tripped up by this problem (vos Savant answered 
-                  correctly and <a href="https://web.archive.org/web/20130121183432/http://marilynvossavant.com/game-show-problem/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">got a lot of angry letters disagreeing!</a>) There are many good explanations for the original Monty Hall Problem online: I
+                  correctly and <a href="https://web.archive.org/web/20130121183432/http://marilynvossavant.com/game-show-problem/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">got a lot of angry letters disagreeing!</a>) There are many good explanations of the original Monty Hall Problem online: I
                   like <a href="https://www.youtube.com/watch?v=7u6kFlWZOWg" target="_blank" rel="noopener" className="text-blue-600 hover:underline">this one</a> from Numberphile.
                 </p>
                 <div className="my-8 relative">
@@ -61,7 +61,7 @@ export default function Explanation() {
                 </p>
               </div>
                 <p className="text-black mb-4 leading-relaxed">
-                  However, the wording of the puzzle doesn't always emphasize a key aspect: the host <strong>knows</strong> where
+                  However, the wording of the puzzle doesn't emphasize a key aspect: the host <strong>knows</strong> where
                   the car is, and will <strong>always</strong> open a door with a goat behind it.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -70,7 +70,7 @@ export default function Explanation() {
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   A lot of people who mostly understand the original Monty Hall Problem <em>get this wrong.</em> And because the Monty Hall Problem is so famously counterintuitive,
-                  it's easy to make a mistake on this modified version and then double down, insisting to yourself your answer
+                  it's easy to get this version wrong and then double down, insisting to yourself your answer
                   only seems wrong because the puzzle is so tricky.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -195,8 +195,8 @@ export default function Explanation() {
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   But probabilities don't inherently "lock in" like that! They absolutely change in response to new information. If you're playing a card game, and you hope your opponent isn't holding an ace,
-                  you feel better if you see three aces dealt randomly onto the table.
-                  Even though the aces were dealt after their hand, they still give useful information: there's only one ace left, making the odds low that it happens to be in their hand.
+                  you feel better if you see three aces dealt onto the table.
+                  Even though the aces were dealt after they were already holding their hand, they still give useful information: there's only one ace left, making the odds lower that it happens to be among their cards.
                 </p>
                 <div className="my-8 relative">
                 <Image
@@ -251,7 +251,7 @@ export default function Explanation() {
                 />
                 </div>
                 <p className="text-black mb-4 leading-relaxed">                  
-                  Let's talk about a common way people make the original Monty Hall Problem make sense: extending it to an extreme case. Suppose there are a hundred doors.
+                  One common way to make the original Monty Hall problem intuitive is to extend it to an extreme case. Suppose there are a hundred doors.
                   You point to door #23. Slowly, deliberately, Monty opens every door except for #23 and #57, revealing a goat behind each one.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -261,7 +261,7 @@ export default function Explanation() {
                 <p className="text-black mb-4 leading-relaxed">
                   But if Monty <em>doesn't know where the car is,</em> he can't be deliberately avoiding it. If he randomly opens 98 doors and doesn't find the car... sure, that's
                   surprising, but it's not suspicious. (Well, you might find it suspicious, but all versions of this puzzle assume you can trust what Monty says: we know whether
-                  he is picking randomly or deliberately.) In fact, opening all those doors without revealing the
+                  he is picking randomly or deliberately.) In fact, opening all those doors randomly without revealing the
                   car makes you feel a lot <em>better</em> about your initial choice! A very plausible reason he hasn't found the car after so many random doors is... it's been behind
                   your door the whole time! Each door that opens gives you information, which has steadily increased your probability from 1/100 right up to 1/2. 
                 </p>
@@ -334,9 +334,9 @@ export default function Explanation() {
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   When you say, "There's a 1/3 chance
-                  a car is behind that door," you're saying: "I know there are three doors, and that someone got one car and placed it behind one of those doors, 
-                  but I don't have any reason to think one of the doors is more or less likely than any other. I do know, or at least am assuming as true, that it is behind a door, not off in the parking lot;
-                  that there's only one car; that it isn't split somehow
+                  a car is behind that door," you're saying: "I know there are three doors, and that someone got one car and randomly placed it behind one of those doors. 
+                  I don't have any reason to think one of the doors is more or less likely than any other. I am assuming that there is one car; that it is behind a door, not off in the parking lot;
+                  that it isn't split somehow
                   behind multiple doors; that the people backstage aren't moving the car around in response
                   to my guess," and so on. 
                   Probability is not about what's actually true, not about where the car actually is;
@@ -361,7 +361,8 @@ export default function Explanation() {
                   better than a 2/3 chance of victory, that's a 100% chance!
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  This isn't <em>impossible.</em> That is, these actions aren't impossible: nothing physically prevents you from always choosing the car door. It's just hard to 
+                  This isn't <em>impossible.</em> That is, these actions aren't impossible: nothing physically prevents you from always choosing the car door. If you try the 
+                  simulator, you might find this strategy even works, for a time! It's just hard to 
                   think of this as a "strategy," but only because of your lack of knowledge.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -369,7 +370,7 @@ export default function Explanation() {
                   approach the three doors, and you happen to point to the car.
                   Monty deliberately opens another door to reveal a goat, and you smugly think to yourself, "Aha, this is the classic Monty Hall Problem, and
                   because I understand how the math works, I know that I should switch." But
-                  you're <em>wrong.</em> You <em>shouldn't switch,</em> not this time. "Always switch" is not the best strategy, it's just the best strategy <em>you can do.</em> It's
+                  you're <em>wrong.</em> You <em>shouldn't switch,</em> not this time. "Always switch" is <em>not</em> the best strategy, it's just the best strategy <em>you can do.</em> It's
                   only because we don't know where the car is that we reason in terms of probabilities. But either
                   you should switch or you shouldn't, and in the real world, you shouldn't switch a full 1/3 of times: you just don't know when those times are.
                 </p>
@@ -380,6 +381,48 @@ export default function Explanation() {
                   either is a car or there isn't. With any given attempt at the game, you're either pointing at the car or you're not. Probability is
                   just a way of describing what you know about the situation, all of the possible information you could use as clues to
                   what you might be pointing at. And if one of the things you know is that Monty knows, it changes the probability.
+                </p>
+                <h3 className="text-xl font-semibold mb-3">
+                  Why is this interesting?
+                </h3>
+                <p className="text-black mb-4 leading-relaxed">
+                  Well, clearly I find probability pretty interesting in general. But I like this particular problem because <em>it's a problem smart people get wrong.</em> Or at least, it's a problem
+                  people only got wrong if they've seen the original Monty Hall problem, and learned (some!) of the explanation for it.
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  Because I also got this wrong at first! I made the simulation because I wasn't sure I was calculating correctly, and once I started playing with it, the realization hit me like a ton of bricks. <em>Of course</em> it doesn't make a difference if you 
+                  switch. <em>This is the intuitive case!</em> This is the situation people are implicitly imagining when they hear the original Monty Hall problem; they get it wrong
+                  because they feel like <em>this</em> is what's happening. It doesn't make a difference if you switch, for the exact reasons you probably felt it didn't make a difference if you switched,
+                  before someone explained the subtleties of the original problem to you.
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  And I think there's a really interesting lesson in that! I'd put it this way: a smart person knows that intuition isn't always reliable. But it's very easy to know this and <em>use intuition anyway,</em>—you just swap out
+                  your first intuition for a new "counterintuitive" one. A person who looks at the second version of the Monty Hall problem and thinks it's probably better to switch is still "trusting their gut," they've just
+                  updated their gut feeling for problems like this.
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  So the lesson is: there's no way to avoid the need to sometimes use logic, <em>real</em> logic, break a problem down to its components before leaping to a solution. There's no list of cognitive
+                  fallacies you can memorize that will make you rational, no perfect set of heuristics that will always guide you correctly. Some things in life are intuitive, some are counter-intuitive, and
+                  there's no detectable difference between the two before you break the problems down and look at them logically. The lesson of the Monty Hall problem shouldn't just be that "probability is tricky," it should be
+                  a reminder that anything can be tricky, and even if you think you know the tricks, you can get tricked again. There's no substitute for doing the math, running the simulation, approaching the problem
+                  with fresh eyes and trusting none of your guesses.
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  That's one reason I find this puzzle interesting. But the other reason I like it is... again, just how <em>weird</em> it is!
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  It's so fun to see a situation where the exact same physical actions take place, but the probabilities are different! I think that's another reason analytically-minded people get tripped up! It feels
+                  almost <em>mystical</em> to say "it matters whether Monty knows." It's like saying a watched pot never boils, or that the secret ingredient in Grandma's cookies is love. We're very used to the idea
+                  that the physical world is all that matters, and that to be scientific means understanding that the same set of physical events will lead to the same outcome, every time. It doesn't matter if Grandma baked
+                  the cookies with love or not: they're made of flour, butter, and sugar all the same.
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  And this problem does not deny physical reality. It is <em>not</em> actually mystical, it does not require anything out of the ordinary to be true. But it does show that from a <em>human</em> perspective,
+                  ideas like knowledge and intentionality can matter: <em>mathematically</em>. There is a <em>real</em> difference between Monty opening the door to reveal a goat deliberately or accidentally: even if it's the
+                  exact same physical event, it really does <em>mean</em> something different, in a way that matters. I don't mean this metaphorically: the difference between Monty opening the door deliberately or accidentally
+                  is the difference between a work of art made by an artist, and a perfect replica, down to the brushstroke, painted by a machine. It's the difference between doing something because you care about someone, or
+                  because you think it's expected of you. These differences are <em>real</em>, and understanding them is important.
+                  
                 </p>
               </section>
 
