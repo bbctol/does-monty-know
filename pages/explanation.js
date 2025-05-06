@@ -400,7 +400,7 @@ export default function Explanation() {
                   updated their gut feeling with the sense that: problems like this have a trick, remember? just remember that it's actually better to switch.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  So the lesson is this: you have to use logic, <em>real</em> logic, break a problem down to its components before leaping to a solution. There's no list of cognitive
+                  So the lesson is, you have to use logic, <em>real</em> logic, break a problem down to its components before leaping to a solution. There's no list of cognitive
                   fallacies you can memorize that will make you rational, no perfect set of heuristics that will always guide you correctly. Some things in life are intuitive, some are counter-intuitive, and
                   there's no detectable difference between the two before you break the problems down and look at them logically. The lesson of the Monty Hall problem shouldn't just be that "probability is tricky," it should be
                   a reminder that <em>anything</em> can be tricky, and even if you think you know the tricks, you can get tricked again. There is <em>no</em> substitute for doing the math, running the simulation, approaching the problem
@@ -423,7 +423,39 @@ export default function Explanation() {
                   the difference between a work of art made by an artist, and a perfect replica, down to the brushstroke, painted by a machine. It's the difference between doing something because you care about someone, or
                   because you think it's expected of you. It's the difference between saying something because you mean it or because you were told to. 
                   It's hard to talk about these differences, and easy to frame discussions of them as irrational. But these differences are <em>real</em>, and understanding them is important.
-                  
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  Here's one final set of questions for you:</p>
+
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-4">
+                    <p>
+                    Suppose you’re on a game show, and you’re given the choice of three doors. 
+                    Behind one door is a car, behind the others, goats. You pick a door, and the host, 
+                    who knows what’s behind the doors, says "Now I'll go open a door with a goat behind it." However, on his way across the stage, he trips, stumbling wildly, and knocks open
+                    one of the doors by accident, revealing a goat. "Whew!" he says, dusting himself off. "That was a little embarrassing, but it worked out fine: like I said, I was going to
+                    reveal a goat anyway."
+                    </p>
+                  </div> 
+                <p className="text-black mb-4 leading-relaxed">
+                  Should you switch doors? Or stay with your original choice?
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  What about one more?
+                </p>
+                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-4">
+                    <p>
+                    Suppose you’re on a game show, and you’re given the choice of three doors. 
+                    Behind one door is a car, behind the others, goats. You pick a door, and the host, 
+                    who knows what’s behind the doors, says "Now I'll go open a door with a goat behind it." However, on his way across the stage, he trips, stumbling wildly, and knocks open
+                    one of the doors by accident, revealing a goat. "Whew!" he says, dusting himself off. "That was a little embarrassing, but it worked out fine: I was going to open that door to
+                    reveal a goat anyway."
+                    </p>
+                  </div>
+                <p className="text-black mb-4 leading-relaxed">
+                  Should you switch, or stay?
+                </p>
+                <p className="text-black mb-4 leading-relaxed">
+                  How sure are you?
                 </p>
               </section>
 
