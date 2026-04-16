@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import * as Switch from '@radix-ui/react-switch';
 
 // Results Display Component
@@ -266,7 +267,7 @@ const MontyHallSimulator = () => {
                 the host <em>doesn't know</em> where the car is and opens a random door, there's no benefit to switching - <em>even if he revealed a goat!</em> Don't 
                 believe it? Try it for yourself!
               </p>
-              <p><a href="/explanation" className="text-blue-600 font-bold hover:underline">What's going on?</a>
+              <p><Link href="/explanation" className="text-blue-600 font-bold hover:underline">What's going on?</Link>
               </p>
             </div>
 
