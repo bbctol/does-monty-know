@@ -1,6 +1,7 @@
 // pages/explanation.js
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Explanation() {
     return (
@@ -15,14 +16,14 @@ export default function Explanation() {
   
             {/* Back to Game Link */}
             <div className="mb-8">
-              <a 
-                href="/" 
+              <Link
+                href="/"
                 className="text-blue-600 hover:underline hover:text-blue-800"
               >
                 ← Back to Game
-              </a>
+              </Link>
             </div>
-  
+
             {/* Content Sections */}
             <div className="space-y-8">
               {/* Section Example 1 */}
@@ -461,12 +462,12 @@ export default function Explanation() {
   
             {/* Footer with Back to Game Link */}
             <div className="mt-12 pt-6 border-t">
-              <a 
-                href="/" 
+              <Link
+                href="/"
                 className="text-blue-600 hover:underline hover:text-blue-800"
               >
                 ← Back to Game
-              </a>
+              </Link>
             </div>
           </div>
         </div>
