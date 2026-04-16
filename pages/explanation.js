@@ -43,9 +43,9 @@ export default function Explanation() {
                     </p>
                   </div> 
                 <p className="text-black mb-4 leading-relaxed">
-                  The answer is yes: switching to the other door doubles your chances of getting the car.
-                  Many people find this result counterintuitive, and think that switching shouldn't make a difference. Even mathematicians can get tripped up by this problem (vos Savant answered 
-                  correctly and <a href="https://web.archive.org/web/20130121183432/http://marilynvossavant.com/game-show-problem/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">got a lot of angry letters disagreeing!</a>) There are many good explanations of the original Monty Hall Problem online: I
+                  The answer is yes. Switching to the other door doubles your chances of getting the car.
+                  Many people find this counterintuitive, and think that switching shouldn't make a difference. Even mathematicians can get tripped up by this problem (vos Savant answered 
+                  correctly and <a href="https://web.archive.org/web/20130121183432/http://marilynvossavant.com/game-show-problem/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">got a lot of angry letters disagreeing!</a>) There are a lot of good explanations of the original Monty Hall Problem online: I
                   like <a href="https://www.youtube.com/watch?v=7u6kFlWZOWg" target="_blank" rel="noopener" className="text-blue-600 hover:underline">this one</a> from Numberphile.
                 </p>
                 <div className="my-8 relative">
@@ -57,16 +57,16 @@ export default function Explanation() {
                   className="rounded-lg shadow-md"
                 />
                 <p className="text-center text-gray-600 mt-2 text-sm">
-                  The problem is named for <em>Let's Make a Deal</em> host Monty Hall, though the game described in the problem isn't exactly how the show was played.
+                  The problem is named for <em>Let's Make a Deal</em> host Monty Hall, though the show didn't really work the way the problem suggests.
                 </p>
               </div>
                 <p className="text-black mb-4 leading-relaxed">
-                  However, the wording of the puzzle doesn't emphasize a key aspect: the host <strong>knows</strong> where
+                  However, the wording of the puzzle doesn't always emphasize a key aspect: the host <strong>knows</strong> where
                   the car is, and will <strong>always</strong> open a door with a goat behind it.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  If the host <em>doesn't</em> know where the car is, <strong>and opens one of the other doors at random, it is not better to switch.</strong> Even
-                  if he reveals a goat!
+                  If the host <em>doesn't</em> know where the car is, and opens one of the other doors at random, <strong>it is not better to switch. <em>Even
+                  if he reveals a goat!</em></strong>
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   A lot of people who mostly understand the original Monty Hall Problem <em>get this wrong.</em> And because the Monty Hall Problem is so famously counterintuitive,
