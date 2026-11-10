@@ -74,7 +74,7 @@ export default function Explanation() {
                 <p className="text-black mb-4 leading-relaxed">
                   A lot of people who have heard the original Monty Hall Problem <em>get this wrong.</em> And because the Monty Hall Problem is famously counterintuitive,
                   it's easy to get this slightly different version wrong, and then double down, believing that your answer
-                  only <i>seems</i> wrong because the puzzle's so tricky.
+                  only <em>seems</em> wrong because the puzzle's so tricky.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   But it's true: If Monty deliberately opens a door with a goat behind it, you should switch. If Monty randomly opens a door with a goat behind it,
@@ -100,7 +100,7 @@ export default function Explanation() {
                   This website is mostly <em>not</em> about that. I want to use as little mathematical terminology as I can. This strange result <em>is</em> true: this website is about trying to explain conceptually, intuitively, how this can be possible.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  Because I don't blame someone for getting confused! Why does it matter if Monty knows where the goats are, if the problem states that he <i>does</i> reveal a goat?
+                  Because I don't blame someone for getting confused! Why does it matter if Monty knows where the goats are, if the problem states that he <em>does</em> reveal a goat?
                   Math doesn't care about "beliefs" or "intentions," right? If Monty does the exact
                   same thing in both situations, how can it make a difference <em>why</em> he does it?
                 </p>
@@ -143,11 +143,11 @@ export default function Explanation() {
                   Well, when Monty's choosing randomly, he could only reveal the car <em>if</em> the original door you picked has a goat behind it.
                   That leaves him with two doors, one with a car and one with a goat: half the time, he'll reveal a car. The other
                   half of the time, he'll reveal a goat. The cases when you've pointed at a goat, and Monty has revealed the other goat, are the cases when it's better to switch, because the car is behind the remaining door! If instead, he <em>always</em> reveals the goat, that means that <em>every time</em> you
-                  initially choose a goat, it becomes one of those cases when it's better to switch. Because when you initially choose a goat, he <i>has</i> to open the door with the other goat.
+                  initially choose a goat, it becomes one of those cases when it's better to switch. Because when you initially choose a goat, he <em>has</em> to open the door with the other goat.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   If Monty doesn't know, 1/3 of the time you should switch, 1/3 of the time you should stay, 1/3 of the time he
-                  reveals the car. If he does know, then all the times when he <i>would</i> have revealed the car become times where it's better to switch, yielding the result in the original problem:
+                  reveals the car. If he does know, then all the times when he <em>would</em> have revealed the car become times where it's better to switch, yielding the result in the original problem:
                   switching wins 2/3 of the time.
                 </p>
                 <h3 className="text-xl font-semibold mb-3">
