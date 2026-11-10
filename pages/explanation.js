@@ -33,13 +33,15 @@ export default function Explanation() {
                 </h2>
                 <p className="text-black mb-4 leading-relaxed">
                   This website is about the <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" target="_blank" rel="noopener" className="text-blue-600 hover:underline">Monty Hall Problem</a>, 
-                  a famous brain teaser. The best-known version was asked to
+                  a famous brain teaser. It was most famously asked to
                   columnist Marilyn vos Savant in 1990:</p>
                   <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-4">
                     <p>
                     Suppose you’re on a game show, and you’re given the choice of three doors. 
-                    Behind one door is a car, behind the others, goats. You pick a door, say #1, and the host, 
-                    who knows what’s behind the doors, opens another door, say #3, which has a goat. 
+                    Behind one door is a car, behind the others, goats. </p>
+                    <p>  You pick a door, say #1, and the host, 
+                    who knows what’s behind the doors, opens another door, say #3, which has a goat. </p>
+                    <p>
                     He says to you, "Do you want to pick door #2?" Is it to your advantage to switch your choice of doors?
                     </p>
                   </div> 
