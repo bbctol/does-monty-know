@@ -38,9 +38,9 @@ export default function Explanation() {
                   <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-4">
                     <p>
                     Suppose you’re on a game show, and you’re given the choice of three doors. 
-                    Behind one door is a car, behind the others, goats. </p><p></p>
+                    Behind one door is a car, behind the others, goats. </p><br><br>
                     <p>  You pick a door, say #1, and the host, 
-                    who knows what’s behind the doors, opens another door, say #3, which has a goat. </p><p></p>
+                    who knows what’s behind the doors, opens another door, say #3, which has a goat. </p><br><br>
                     <p>
                     He says to you, "Do you want to pick door #2?" Is it to your advantage to switch your choice of doors?
                     </p>
@@ -60,11 +60,11 @@ export default function Explanation() {
                   className="rounded-lg shadow-md"
                 />
                 <p className="text-center text-gray-600 mt-2 text-sm">
-                  The problem is named for <em>Let's Make a Deal</em> host Monty Hall, though the show didn't really work the way it does in the problem.
+                  The problem is named for <em>Let's Make a Deal</em> host Monty Hall, although the show didn't work the way it does in the problem.
                 </p>
               </div>
                 <p className="text-black mb-4 leading-relaxed">
-                  However, the wording of the puzzle doesn't always emphasize a key aspect: the host <strong>knows</strong> where
+                  However, there's an important part of this puzzle which isn't always made clear. The host <strong>knows</strong> where
                   the car is, and will <strong>always</strong> open a door with a goat behind it.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -73,12 +73,12 @@ export default function Explanation() {
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   A lot of people who have heard the original Monty Hall Problem <em>get this wrong.</em> And because the Monty Hall Problem is famously counterintuitive,
-                  it's easy to get this version wrong and then double down, thinking that your answer
-                  only seems wrong because the puzzle is so tricky.
+                  it's easy to get this slightly different version wrong, and then double down, believing that your answer
+                  only <i>seems</i> wrong because the puzzle's so tricky.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  But it's true: If Monty randomly opens a door with a goat behind it,
-                  there's no reason to switch. If Monty deliberately opens a door with a goat behind it, you should switch. <strong>It makes a difference whether Monty knows.</strong>
+                  But it's true: If Monty deliberately opens a door with a goat behind it, you should switch. If Monty randomly opens a door with a goat behind it,
+                  there's no reason to switch. <strong>It makes a difference whether Monty knows.</strong>
                 </p>
               </section>
   
@@ -88,21 +88,20 @@ export default function Explanation() {
                   Why is this true?
                 </h2>
                 <p className="text-black mb-4 leading-relaxed">
-                  Understanding why is a lot easier once you've demonstrated to yourself that it <em>is</em> true. So if you have doubts,
+                  Understanding why is a lot easier once you've demonstrated to yourself that this <em>is</em> true. So if you have doubts,
                   on the <a href="/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">main page</a> you can play the game
-                  both ways. (Keep in mind that if Monty doesn't know where the car is,
+                  under both conditions. (Keep in mind that if Monty doesn't know where the car is,
                   he might accidentally reveal it, ending the game early!) Try or simulate it as many times as you like:
-                  when Monty doesn't know where the car is, then if he reveals a goat,
-                  there's no advantage to switching. If you don't trust the website, you can try it yourself with some playing cards.
+                  if Monty doesn't know where the car is, then when he reveals a goat,
+                  there's no advantage to switching. If you don't trust the website, you can try it yourself at home with three playing cards or something similar.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  There are also ways to prove this rigorously, by drawing tree diagrams or writing probability formulas that cover all cases.
-                  This website is <em>not</em> about that (yet). I'm going to use as little mathematical terminology as I can. But make no mistake, this strange result <em>is</em> true.
-                  What this website is about is trying to explain conceptually, intuitively, how this can be possible.
+                  There are also ways to prove this mathematically.
+                  This website is mostly <em>not</em> about that. I want to use as little mathematical terminology as I can. This strange result <em>is</em> true: this website is about trying to explain conceptually, intuitively, how this can be possible.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  Because I don't blame anyone for getting confused! Why does it matter if Monty knows where the goats are, if the problem states that he does reveal a goat?
-                  Math doesn't care about "beliefs" or "intentions," right? If Monty does the
+                  Because I don't blame someone for getting confused! Why does it matter if Monty knows where the goats are, if the problem states that he <i>does</i> reveal a goat?
+                  Math doesn't care about "beliefs" or "intentions," right? If Monty does the exact
                   same thing in both situations, how can it make a difference <em>why</em> he does it?
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
@@ -112,22 +111,22 @@ export default function Explanation() {
                   Monty's behavior is forced
                 </h3>
                 <p className="text-black mb-4 leading-relaxed">
-                  One cause of confusion is that the problem is usually worded as "the host knows what's behind the doors." But to be fair,
-                  we don't quite care about what Monty's "knowledge," his psychological state. The phrase "the host, who knows what's behind the doors, opens a door which has a goat" really means this:
+                  One reason the problem is confusing is that it's usually worded as "the host knows what's behind the doors." But to be fair,
+                  we don't quite care about Monty's "knowledge." This isn't about his psychological state. The phrase "the host, who knows what's behind the doors, opens a door which has a goat" really means this:
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   <strong>The host never would have opened a door with the car behind it.</strong>
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
-                  Or if you prefer, the host <em>cannot</em> open a door with a car behind it. It's just not possible. Maybe he knows where the car is and chooses not to reveal it, maybe he knows nothing but is being fed instructions through an earpiece. 
-                  Maybe he's been magically cursed to never reveal a car. The puzzle works either way: the point is, the puzzle relies on the
-                  host's <em>predictable behavior,</em> not his knowledge. After all, the host in this simulated version is just a few lines of code - I'm not sure it "knows" anything!
+                  Or if you prefer, the host <em>cannot</em> open a door with a car behind it. It's just not possible. Whether he knows where the car is and chooses not to reveal it, or knows nothing but is being fed instructions through an earpiece, or 
+                  maybe he's been magically cursed to never reveal a car. The point is, the puzzle relies on the
+                  host's <em>predictable behavior.</em> After all, the host in this website's version is just a few lines of code - I'm not sure it "knows" anything!
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   Why does the host's <em>predictable behavior</em> matter? Set the switch to "Monty Doesn't Know" and play or simulate a lot of tries.
                   Whether you switch or stay, about 1/3 of the time, he reveals a goat, and you win. And 1/3 of the time, he reveals a goat and you lose. But also, 1/3 of
-                  the time, Monty accidentally reveals the car, ending the game. So when Monty doesn't know,
-                  you have an even chance of winning when Monty reveals a goat whether you switch or stay - but there are also these extra cases where Monty reveals the car.
+                  the time, Monty accidentally reveals the car, ending the game. So when Monty doesn't know, when he reveals a goat
+                  you have an equal chance of winning whether you switch or stay - and then there are also these cases where Monty reveals the car.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   (You might be bothered by me saying Monty revealing the car "ends the game early": where did I get that rule? But since the puzzle
@@ -142,23 +141,23 @@ export default function Explanation() {
                 </p>
                 <p className="text-black mb-4 leading-relaxed">                 
                   Well, when Monty's choosing randomly, he could only reveal the car <em>if</em> the original door you picked has a goat behind it.
-                  That would leave him with two doors, one with a car and one with a goat: half the time, he'll reveal a car. The other
-                  half of the time, he'll reveal a goat - those are the cases when it's better to switch, because the car is behind the remaining door! If instead, he <em>always</em> reveals the goat, that means that <em>every time</em> you
-                  initially choose a goat, it <em>has</em> to become one of those cases when it's better to switch. Because every time you initially choose a goat, he has to open the door with the other goat!
+                  That leaves him with two doors, one with a car and one with a goat: half the time, he'll reveal a car. The other
+                  half of the time, he'll reveal a goat. The cases when you've pointed at a goat, and Monty has revealed the other goat, are the cases when it's better to switch, because the car is behind the remaining door! If instead, he <em>always</em> reveals the goat, that means that <em>every time</em> you
+                  initially choose a goat, it becomes one of those cases when it's better to switch. Because when you initially choose a goat, he <i>has</i> to open the door with the other goat.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   If Monty doesn't know, 1/3 of the time you should switch, 1/3 of the time you should stay, 1/3 of the time he
-                  reveals the car. If he does know, then all the times when he would have revealed the car become times where it's better to switch, yielding the result in the original problem:
+                  reveals the car. If he does know, then all the times when he <i>would</i> have revealed the car become times where it's better to switch, yielding the result in the original problem:
                   switching wins 2/3 of the time.
                 </p>
                 <h3 className="text-xl font-semibold mb-3">
                   It's about information
                 </h3>
                 <p className="text-black mb-4 leading-relaxed">
-                  The above explanation... makes a little sense, maybe? If you're mathematically inclined and love drawing tree diagrams, it might be enough. But I find it unsatisfying - it doesn't tackle
+                  The above explanation... makes a little sense, maybe? If you're mathematically inclined and love drawing probability diagrams, it might be enough. But I find it unsatisfying - it doesn't tackle
                   the <em>weirdness</em> of this problem. Because it really feels like both situations are the same! You point to a door, Monty reveals a goat,
-                  not a car: why should we care about hypotheticals that didn't actually happen? What do I even mean, times turn into
-                  different times? The problem tells us what's happened. So why do we care what <em>could have</em> happened, but didn't?
+                  not a car: why should we care about hypotheticals that didn't actually happen? What do I even mean, times when he would do one thing turn into
+                  times when he does something else? The problem tells us what's happened. So why do we care what <em>could have</em> happened, but didn't?
                 </p>
                 <div className="my-8 relative">
                 <Image
@@ -175,8 +174,8 @@ export default function Explanation() {
               </div>
                 <p className="text-black mb-4 leading-relaxed">
                   Here's a different way to think about it: you're looking for information. You're like a detective, hunting for clues. And the same object can be a different clue
-                  depending on where it came from. If there's a bootprint in the hall, it matters if the victim wore boots or not. If the window was open on the night of the crime, it matters if someone leaves it open every night, 
-                  or if it was just open this once. The same event <em>means</em> something different depending on how rare it is - it gives you different information.
+                  depending on where it came from. If there's a bootprint in the hall, it means something different if the victim was wearing boots or not. If the window was open on the night of the crime, it matters if someone leaves it open every night, 
+                  or if it was just open this once. The same event <em>means</em> something different depending on how rare it is. It gives you different information.
                 </p>
                 <p className="text-black mb-4 leading-relaxed">
                   What information is Monty giving us? It might make more sense to think in this way: when he deliberately reveals a goat every time, what information is he <em>hiding?</em> Try to picture
