@@ -38,10 +38,9 @@ export default function Explanation() {
                   <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-4">
                     <p>
                     Suppose you’re on a game show, and you’re given the choice of three doors. 
-                    Behind one door is a car, behind the others, goats. </p><br><br>
-                    <p>  You pick a door, say #1, and the host, 
-                    who knows what’s behind the doors, opens another door, say #3, which has a goat. </p><br><br>
-                    <p>
+                    Behind one door is a car, behind the others, goats.
+                    You pick a door, say #1, and the host, 
+                    who knows what’s behind the doors, opens another door, say #3, which has a goat.
                     He says to you, "Do you want to pick door #2?" Is it to your advantage to switch your choice of doors?
                     </p>
                   </div> 
