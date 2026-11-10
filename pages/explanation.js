@@ -38,9 +38,9 @@ export default function Explanation() {
                   <div className="bg-blue-50 border-l-4 border-blue-500 p-4 my-4">
                     <p>
                     Suppose you’re on a game show, and you’re given the choice of three doors. 
-                    Behind one door is a car, behind the others, goats. </p>
+                    Behind one door is a car, behind the others, goats. </p><p></p>
                     <p>  You pick a door, say #1, and the host, 
-                    who knows what’s behind the doors, opens another door, say #3, which has a goat. </p>
+                    who knows what’s behind the doors, opens another door, say #3, which has a goat. </p><p></p>
                     <p>
                     He says to you, "Do you want to pick door #2?" Is it to your advantage to switch your choice of doors?
                     </p>
@@ -48,7 +48,7 @@ export default function Explanation() {
                 <p className="text-black mb-4 leading-relaxed">
                   The answer is yes. Switching to the other door doubles your chances of getting the car.
                   Many people find this counterintuitive, and think that switching shouldn't make a difference. Even mathematicians can get tripped up by this problem (vos Savant answered 
-                  correctly and <a href="https://web.archive.org/web/20130121183432/http://marilynvossavant.com/game-show-problem/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">got a lot of angry letters disagreeing!</a>) There are a lot of good explanations of the original Monty Hall Problem online: I
+                  correctly, and <a href="https://web.archive.org/web/20130121183432/http://marilynvossavant.com/game-show-problem/" target="_blank" rel="noopener" className="text-blue-600 hover:underline">got a lot of angry letters disagreeing.</a>) There are plenty of good explanations of the Monty Hall Problem online: I
                   like <a href="https://www.youtube.com/watch?v=7u6kFlWZOWg" target="_blank" rel="noopener" className="text-blue-600 hover:underline">this one</a> from Numberphile.
                 </p>
                 <div className="my-8 relative">
